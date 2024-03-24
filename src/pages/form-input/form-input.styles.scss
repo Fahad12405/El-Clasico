@@ -1,0 +1,68 @@
+// Define variables for colors
+$sub-color: grey;
+$main-color: black;
+
+// Define mixin for shrinking labels
+@mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+    color: $main-color;
+}
+
+// Define container styles
+.container {
+    width: 80%; // Set desired width
+    margin: 0 auto; // Center the container horizontally
+}
+
+// Define styles for form group
+.group {
+    display: flex; // Use flexbox
+    flex-direction: column; // Stack items vertically
+    align-items: center; // Center items horizontally
+    position: relative;
+    margin: 45px auto; // Auto margin to center horizontally
+
+    .form-input {
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $sub-color;
+        margin: 38px auto; // Center the input horizontally
+
+        &:focus {
+            outline: none;
+        }
+
+        // Apply shrink label mixin on focus
+        &:focus~.form-input-label {
+            @include shrinkLabel();
+        }
+    }
+
+    // Apply letter spacing for password input
+    input[type='password'] {
+        letter-spacing: 0.3em;
+    }
+
+    .form-input-label {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 300ms ease all;
+
+        &.shrink {
+            @include shrinkLabel();
+        }
+    }
+}
