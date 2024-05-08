@@ -1,0 +1,123 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 10px 0; /* Decreased padding to decrease the height */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+   
+    font-size: 14px;
+    margin: 15px 0px 40px;
+    position: relative;
+    font-family: cursive;
+    color: #b6b8bb;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #b6b8bb;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+section, footer {
+    background: #040344;
+    color: #f8f4f4;
+}
+
+footer {
+    padding: 0px 0; /* Adjusted padding to decrease the height */
+}
+
+footer p {
+    padding: 10px 0; /* Adjusted padding to decrease the height */
+    text-align: center;
+    color: #b0b2b4;
+    font-family: cursive;
+
+}
+
+footer img {
+    width:140px;
+    height: 50px;
+    border-radius: 10px;}
+
+.logo-link {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.logo-heading {
+    font-size: 3.5rem; /* Adjust the font size as needed */
+    color: #a7a7bd; /* Set the text color */
+    font-weight: bold; /* Apply bold font weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 4px; /* Add letter spacing for better readability */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    font-family: cursive;
+}
+
+  
+.qr-code-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center
+  
+}

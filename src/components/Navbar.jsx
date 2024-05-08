@@ -11,7 +11,7 @@ const Navbar = () => {
         <BootstrapNavbar collapseOnSelect expand="lg" bg="white" variant="white" className="py-3 sticky-top">
             <div className="container">
                 <NavLink to="/">
-                    <Image src="https://www.marks-iplaw.jp/wp-content/uploads/2020/12/El-Clasico.jpg" alt="Logo" className="logo-img" style={{ width: '200px' }} />
+                        <Image src="https://www.marks-iplaw.jp/wp-content/uploads/2020/12/El-Clasico.jpg" alt="Logo" className="logo-img" style={{ width: '200px' }} />
                 </NavLink>
                 <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />
                 <BootstrapNavbar.Collapse id="responsive-navbar-nav">
